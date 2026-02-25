@@ -1,0 +1,64 @@
+.splash {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(180deg, #f4fbef, #ecfafe);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ecocoldLogoIcon {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .splash {
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .ecocoldLogoIcon {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .splash {
+    min-height: 100vh;
+    padding: 10px;
+  }
+  
+  .ecocoldLogoIcon {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 320px) {
+  .splash {
+    min-height: 100vh;
+    padding: 5px;
+  }
+  
+  .ecocoldLogoIcon {
+    width: 120px;
+    height: 120px;
+  }
+}
